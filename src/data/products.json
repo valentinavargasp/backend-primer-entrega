@@ -1,0 +1,46 @@
+[
+  {
+    "id": "3092301b-a4a0-4f4d-8811-ef80c4736f12",
+    "title": "Cámara Retro Prueba 1",
+    "description": "Cámara de fotos vintage con diseño clásico.",
+    "price": 150,
+    "thumbnail": "https://example.com/images/camara-retro.jpg",
+    "code": "CR001",
+    "stock": 10,
+    "status": "true",
+    "category": "Fotografía"
+  },
+  {
+    "id": "1fdad261-6f16-458c-bb69-563fa96b63b7",
+    "title": "Consola de Videojuegos Prueba 2",
+    "description": "Consola clásica para juegos retro.",
+    "price": 200,
+    "thumbnail": "https://example.com/images/consola-videojuegos.jpg",
+    "code": "CV002",
+    "stock": 5,
+    "status": "true",
+    "category": "Videojuegos"
+  },
+  {
+    "id": "4a7c5446-5d36-49eb-8c75-a271772dbc79",
+    "title": "Teléfono Antiguo",
+    "description": "Teléfono de disco con estilo antiguo.",
+    "price": 80,
+    "thumbnail": "https://example.com/images/telefono-antiguo.jpg",
+    "code": "TA003",
+    "stock": 20,
+    "status": "true",
+    "category": "Electrónica"
+  },
+  {
+    "id": "450d185e-bda3-4ad8-aa72-d5124892df06",
+    "title": "Reloj de Bolsillo",
+    "description": "Elegante reloj de bolsillo vintage.",
+    "price": 120,
+    "thumbnail": "https://example.com/images/reloj-bolsillo.jpg",
+    "code": "RB004",
+    "stock": 15,
+    "status": "true",
+    "category": "Accesorios"
+  }
+]
