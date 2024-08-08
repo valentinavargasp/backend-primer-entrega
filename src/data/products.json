@@ -42,5 +42,27 @@
     "stock": 15,
     "status": "true",
     "category": "Accesorios"
+  },
+  {
+    "id": "cd3e7d73-89e6-405f-9a9b-6f8ac3e0f1a9",
+    "title": "Radio Antigua",
+    "description": "Radio de mesa con diseño retro.",
+    "price": 90,
+    "thumbnail": "https://example.com/images/radio-antigua.jpg",
+    "code": "RA005",
+    "stock": 7,
+    "status": "true",
+    "category": "Electrónica"
+  },
+  {
+    "id": "229a5ee7-a887-46ee-a6ab-479151b7f78e",
+    "title": "Máquina de Escribir",
+    "description": "Máquina de escribir mecánica vintage.",
+    "price": 250,
+    "thumbnail": "https://example.com/images/maquina-escribir.jpg",
+    "code": "ME006",
+    "stock": 3,
+    "status": "true",
+    "category": "Oficina"
   }
 ]

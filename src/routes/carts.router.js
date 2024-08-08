@@ -1,37 +1,36 @@
 import { Router } from "express";
-import { cartManager } from "../app.js";
+import { CartManager } from "../managers/cartManager.js";
 
 const cartsRouter = Router();
-
-//Carrito en http://localhost:8080/api/carts/
+const cartManager = new CartManager('./src/data/carts.json');
 
 cartsRouter.post('/', async (req, res) => {
     try {
-        const response = await cartManager.newCart()
-        res.json(response)
+        const response = await cartManager.newCart();
+        res.json(response);
     } catch (error) {
-        res.send('Error al crear carrito.')
+        res.status(500).send('Error al crear carrito.');
     }
-})
+});
 
 cartsRouter.get('/:cid', async (req, res) => {
     const {cid} = req.params;
     try {
-        const response = await cartManager.getCartProducts(cid)
-        res.json(response)
+        const response = await cartManager.getCartProducts(cid);
+        res.json(response);
     } catch (error) {
-        res.send('Error al enviar los productos. ')
+        res.status(500).send('Error al enviar los productos.');
     }
-})
+});
 
 cartsRouter.post('/:cid/products/:pid', async (req, res) => {
     const {cid, pid} = req.params;
     try {
-        await cartManager.addProductToCart(cid, pid)
-        res.send('Producto agregado exitosamente.')
+        await cartManager.addProductToCart(cid, pid);
+        res.send('Producto agregado exitosamente.');
     } catch (error) {
-        res.send('Error al intentar guardar producto. ')
+        res.status(500).send('Error al intentar guardar producto.');
     }
-})
+});
 
-export {cartsRouter}
+export {cartsRouter};
