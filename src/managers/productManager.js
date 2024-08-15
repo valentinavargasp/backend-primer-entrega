@@ -68,3 +68,4 @@ export class ProductManager {
     }
 }
 
+export const productManager = new ProductManager('./src/data/products.json');
